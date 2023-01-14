@@ -1,8 +1,8 @@
 import * as path from "path";
 import * as ts from "typescript";
 import { Diagnostic, flattenDiagnosticMessageText } from "typescript";
-import normalizePath = require("normalize-path");
-import Es6Error = require("es6-error");
+import normalizePath from "normalize-path";
+import Es6Error  from "es6-error";
 
 export interface GroupedDiagnostics {
   [fileName: string]: Array<Diagnostic>;

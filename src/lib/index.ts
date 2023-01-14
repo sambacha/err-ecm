@@ -1,8 +1,8 @@
 import * as os from "os";
 import { Diagnostic } from "typescript";
 import { FormattedDiagnostic, formatFilePath, formatDiagnosticMessage } from "../util";
-import codeFrame = require("@babel/code-frame");
-const chalk = require("chalk");
+import codeFrame from "@babel/code-frame";
+import chalk from "chalk";
 
 export default (diagnostics: Array<Diagnostic>, context: string): FormattedDiagnostic => {
   const file = diagnostics[0].file != null ? diagnostics[0].file : null;
